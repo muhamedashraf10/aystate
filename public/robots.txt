@@ -1,0 +1,17 @@
+# Block all crawlers from accessing sensitive areas
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+
+# Explicitly allow the about-us page
+Allow: /about-us/
+Allow: /blog/
+Allow: /contact-us/
+Allow: /detail-properties/
+Allow: /faqs/
+
+# Allow all crawlers to access public pages
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.yoursite.com/sitemap.xml
