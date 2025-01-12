@@ -7,6 +7,7 @@ import { FC, PropsWithChildren } from "react";
 import Footer from "@/components/Footer";
 import { i18nNamespaces } from "../_lib/common";
 import TranslationsProvider from "@/components/TranslationsProvider";
+import Head from "next/head";
 
 const sora = Sora({
   subsets: ["latin"],
@@ -31,6 +32,11 @@ const RootLayout: FC<TRootLayout> = async ({
 
   return (
     <html lang="en">
+      <Head>
+        <meta name="robots" content="noindex" />
+        <meta name="Googlebot" content="noindex" />
+      </Head>
+
       <body className={`${sora.className}`}>
         <TranslationsProvider
           namespaces={i18nNamespaces}
