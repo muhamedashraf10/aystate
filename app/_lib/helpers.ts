@@ -160,7 +160,7 @@ export const genertateQuestionFaqsData = (t: TLanguage) => {
     {
       id: 3,
       title: t("numberPhoneDesc"),
-      description: t("numberPhoneDescDesc"),
+      description: t("numberPhoneDesc"),
       image: global,
     },
   ];
