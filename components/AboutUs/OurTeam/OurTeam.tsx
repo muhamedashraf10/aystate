@@ -18,8 +18,7 @@ const OurTeam = () => {
           classBadge="flex items-center justify-center"
         />
       </div>
-      <div className="flex flex-wrap mt-[120px] gap-x-[32px] gap-y-[64px] ">
-        <OurTeamCard />
+      <div className="flex flex-wrap justify-between mt-[120px] gap-x-[32px] gap-y-[64px] ">
         <OurTeamCard />
         <OurTeamCard />
         <OurTeamCard />

@@ -37,9 +37,9 @@ const RootLayout: FC<TRootLayout> = async ({
           locale={locale}
           resources={resources}
         >
-          {/* <Navbar /> */}
+          <Navbar />
           <main>{children}</main>
-          {/* <Footer t={t} /> */}
+          <Footer t={t} />
         </TranslationsProvider>
       </body>
     </html>

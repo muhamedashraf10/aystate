@@ -42,17 +42,25 @@ export const DesktopNavbar = () => {
         >
           {t("home")}
         </Link>
-        <Link
+        {/* <Link
           aria-label="listings"
           className={`${
             isActive(routes.Listings)
               ? "text-lightgreen underline underline-offset-4"
               : "text-gray"
           } flex mx-8 text-lg`}
-          href={routes.Listings}
+          href={routes.Home}
         >
           {t("listings")}
-        </Link>
+        </Link> */}
+        <p
+          aria-label="listings"
+          role="button"
+          className={`text-gray flex mx-8 text-lg`}
+          aria-disabled={true}
+        >
+          {t("listings")}
+        </p>
         <p
           aria-label="company"
           role="button"
